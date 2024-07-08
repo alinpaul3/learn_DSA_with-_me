@@ -1,8 +1,9 @@
-Learn DSA with me in 45 days using Java
+<h3>Learn DSA with me in 45 days using Java </h3><br>
 Folders are divided as follows:-
-1) Basic problems
-2) Medium level problems
-3) Tough problems
-4) leetcode important
+<ol>1) Basic problems</ol>
+<ol>2) Medium level problems</ol>
+<ol>3) Tough problems</ol>
+<ol>4) leetcode important</ol>
 
-   Lets dive in together!!
+
+Lets dive in together!!
