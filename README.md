@@ -4,4 +4,4 @@
 
 ### Divide and Conquer
 
-- [104. Maximum Depth of the Binary Tree](Divide_and_Conquer/maximumdepthofbinarytree.md)
+- [104. Maximum Depth of the Binary Tree](Divide_and_Conquer/Maximumdepthofbinarytree.md)
