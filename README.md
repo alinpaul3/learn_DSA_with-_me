@@ -1,9 +1,7 @@
-<h3>Learn DSA with me in 45 days using Java </h3><br>
-Folders are divided as follows:-
-<ol>1) Basic problems</ol>
-<ol>2) Medium level problems</ol>
-<ol>3) Tough problems</ol>
-<ol>4) leetcode important</ol>
+# LeetCode Solutions
 
+## Table of Contents
 
-Lets dive in together!!
+### Divide and Conquer
+
+- [104. Maximum Depth of the Binary Tree](Divide_and_Conquer/maximumdepthofbinarytree.md)
