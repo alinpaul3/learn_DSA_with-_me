@@ -47,3 +47,9 @@ Please notice that another valid answer is [5,2,6,null,4,null,7] and it&#39;s al
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Could you solve it with time complexity <code>O(height of tree)</code>?</p>
+<p> i think this question what tough need to revisit <br> <b> Learning Outcomes</b><br>Node has no children: Simply remove the node.<br>
+Node has one child: Replace the node with its child.<br>
+Node has two children:<br>
+Find the inorder successor (smallest node in the right subtree).<br>
+Replace the value of the node with the inorder successor.<br>
+Delete the inorder successor recursively.</p>
