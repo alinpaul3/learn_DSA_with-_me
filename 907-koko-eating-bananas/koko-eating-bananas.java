@@ -13,7 +13,7 @@ class Solution {
         private boolean gethours(int[] piles,int h, int k){
             int hours=0;
             for(int pile:piles){
-                hours+=(int)Math.ceil((double)pile/k);//used to get the upperbound
+                hours+=(pile+k-1)/k;//used to get the upperbound
             }
             return hours<=h;
         }
