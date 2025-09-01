@@ -1,9 +1,5 @@
 class Solution {
-    static {
-        int [] temp = {30, 60, 90};
-        for(int i = 0; i < 500; i++)
-            dailyTemperatures(temp);
-    }
+
     public static int[] dailyTemperatures(int[] temp) {
         
         int stack[] = new int[temp.length];
@@ -20,3 +16,20 @@ class Solution {
         return result;
     }
 }
+
+//     public static int[] dailyTemperatures(int[] temp){
+//     int[] result=new int[temp.length];
+//     for(int i=0;i<temp.length;i++){
+//         int stack= new int[temp.length];
+
+//         int count=1;
+//         for(int j=0;j<temp.length;j++){
+//             while(temp[i]<temp[j]){
+//                 count+=1;
+//             }
+//             result[i]=count;
+//         }
+//     }
+//     return result;
+// }
+// }
