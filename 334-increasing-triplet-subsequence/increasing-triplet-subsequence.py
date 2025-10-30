@@ -6,8 +6,7 @@ class Solution(object):
         """
         if len(nums)<3:
             return False
-        first=999999999999
-        second=999999999999
+        first=second=float('inf')
         for i in nums:
             if i<=first:
                 first=i
