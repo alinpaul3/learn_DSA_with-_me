@@ -5,7 +5,6 @@ class Solution:
             count=0
             while i:
                 i&=i-1
-                i>>1
                 count+=1
             ans.append(count)
         return ans
