@@ -5,14 +5,12 @@ class Solution {
         String vowel="aeiou";
         int count=0;
         for(int right=0;right<s.length();right++){
-            char cr=s.charAt(right);
-            char cl=s.charAt(left);
-            if(vowel.contains(""+cr)){
+            if(vowel.contains(""+s.charAt(right))){
                 count++;
             }
             if(right-left+1==k){
                 max=Math.max(max,count);
-                if(vowel.contains(""+cl))count--;
+                if(vowel.contains(""+s.charAt(left)))count--;
                 left++;
             }
         }
