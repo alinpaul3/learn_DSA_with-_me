@@ -1,13 +1,13 @@
 class Solution {
-    public int missingNumber(int[] nums) {
-       HashMap<Integer,Integer> map=new HashMap<>();
-       int count=0;
-       for(int j:nums)
-       map.put(j,1);
-    
-    for(int i=0;i<=nums.length;i++){
-        if(!map.containsKey(i))return i;
+    public int missingNumber(int[] nums) 
+    {
+        int n = nums.length;
+        int expectedSum = n * (n + 1) / 2;
+        int actualSum = 0;
+        for (int i=0; i<n; i++)  
+        {
+            actualSum = actualSum+nums[i];
+        }
+        return expectedSum - actualSum;
     }
-return 0;
-}
 }
