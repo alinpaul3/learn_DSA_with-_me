@@ -1,13 +1,13 @@
 class Solution {
     public int maxProfit(int[] prices) {
-        int minprice=Integer.MAX_VALUE;
-        int maxprofit=0;
-        for(int price:prices){
-            if(price<minprice)minprice=price;
-            else if(price-minprice>maxprofit)maxprofit=price-minprice;
+        int profit=0;
+        int currentstock=prices[0];
+        for(int i=1;i<prices.length;i++){
+            int nextstock=prices[i];
+            if(nextstock<=currentstock)currentstock=nextstock;
+            else 
+            profit=Math.max(profit,nextstock-currentstock);
         }
-       return maxprofit;
+        return profit;
     }
 }
-/*Greedy choice: At each step, we decide whether to:
-Update the minimum price seen so far (if a lower price is found)*/
