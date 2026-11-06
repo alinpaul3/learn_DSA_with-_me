@@ -1,24 +1,22 @@
 class Solution {
     public int romanToInt(String s) {
-        HashMap<Character, Integer> map = new HashMap<>();
-        map.put('I', 1);
-        map.put('V', 5);
-        map.put('X', 10);
-        map.put('L', 50);
-        map.put('C', 100);
-        map.put('D', 500);
-        map.put('M', 1000);
-
-        int sum = 0;
-
-        for (int i = 0; i < s.length(); i++) {
-            int current = map.get(s.charAt(i));
-            if (i < s.length() - 1 &&
-                current < map.get(s.charAt(i + 1))) {
-                sum -= current;
-            } else {
-                sum += current;
-            }
+        char[] s1=s.toCharArray();
+        int[] nofs=new int[s1.length];
+        for(int i=0;i<s1.length;i++){
+            if(s1[i]=='I')nofs[i]=1;
+            else if(s1[i]=='V')nofs[i]=5;
+            else if(s1[i]=='X')nofs[i]=10;
+            else if(s1[i]=='L')nofs[i]=50;
+            else if(s1[i]=='C')nofs[i]=100;
+            else if(s1[i]=='D')nofs[i]=500;
+            else if(s1[i]=='M')nofs[i]=1000;
+        }
+        int sum=0;
+        //if(nofs[0]>=nofs[1]) sum=nofs[0];
+        int i=nofs.length-1;
+        while(i>=0){
+            if(i>0 && nofs[i-1]<nofs[i]) {sum+=nofs[i]-nofs[i-1];i-=2;}
+            else {sum+=nofs[i];i-=1;}
         }
         return sum;
     }
